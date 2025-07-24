@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Triggered') {
             steps {
-                echo 'Triggered by webh0000ook!'
+                echo 'Triggered by new webhook!'
             }
         }
         stage('Checkout') {
