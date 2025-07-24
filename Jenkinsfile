@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        IMAGE_NAME = 'java-rest-demo'
+        IMAGE_NAME = 'java-rest-demo-automated'
         IMAGE_TAG = 'latest'
     }
  
