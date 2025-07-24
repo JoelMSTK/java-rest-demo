@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-               git branch: 'jenkins', url: 'https://github.com/JoelMSTK/java-rest-demo.git'
+               checkout scm
             }
         }
         stage('Compile') {
