@@ -11,6 +11,11 @@ pipeline {
     }
  
     stages {
+        stage('Triggered') {
+            steps {
+                echo 'Triggered by webhook!'
+            }
+        }
         stage('Checkout') {
             steps {
                checkout scm
