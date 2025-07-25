@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Triggered') {
             steps {
-                echo 'Triggering build on EC2 Jenkins controller using GitHub Webhook...'
+                echo 'Triggering build on EC2 Jenkins controller using GitHub Webhook on push...'
             }
         }
         stage('Checkout') {
