@@ -16,11 +16,11 @@ pipeline {
                 echo 'Triggering build on EC2 Jenkins controller using GitHub Webhook.....'
             }
         }
-        stage('Checkout') {
-            steps {
-               checkout scm
-            }
-        }
+        // stage('Checkout') {
+        //     steps {
+        //        checkout scm
+        //     }
+        // }
         stage('Compile') {
             steps {
                 sh 'mvn clean compile'
